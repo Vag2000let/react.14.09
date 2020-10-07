@@ -8,6 +8,7 @@ const useStyles = makeStyles(theme => ({
         borderRadius: 4,
         padding: theme.spacing(1),
         color: theme.palette.common.white,
+        marginBottom: theme.spacing(1),
     },
     author: {
         marginLeft: 'auto',

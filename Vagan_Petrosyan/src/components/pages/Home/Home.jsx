@@ -21,7 +21,7 @@ const Home = () => {
                         <ListItemText primary="About Page" />
                     </ListItem>
                 </Link>
-                <Link to="/chats/1">
+                <Link to="/chats">
                     <ListItem button>
                         <ListItemIcon>
                             <ShoppingCartIcon />

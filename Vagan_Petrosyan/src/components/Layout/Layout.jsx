@@ -30,8 +30,8 @@ const Layout = ({children, classes}) => {
     );
 };
 
-Layout.protoTypes = {
-    children: PropTypes.element.isRequired,
+Layout.propTypes = {
+    children: PropTypes.oneOfType([PropTypes.element, PropTypes.arrayOf(PropTypes.element)]).isRequired,
     classes: PropTypes.shape({
         root: PropTypes.string,
         container: PropTypes.string,

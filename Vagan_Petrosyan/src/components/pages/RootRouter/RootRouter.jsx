@@ -1,17 +1,17 @@
 import React from 'react';
 import {Switch, Route} from "react-router-dom";
 import About from "../About";
-import Home from "../Home";
 import Chats from "../Chats";
+import Home from "../Home";
 
 
 const RootRouter = () => {
     return (
         <Switch>
-            <Route exact path="/" >
+            <Route exact path="/">
                 <Home />
             </Route>
-            <Route path="/chats" component={Chats} />
+            <Route path="/chats/:id" component={Chats} />
             <Route path="/about" component={About} />
             <Route
                 render={() => (
